@@ -14,8 +14,8 @@ import DogFace from "./components/DogFace.vue";
   </main>
 </template>
 
-<style>
-@import "@/assets/base.css";
+<style lang="scss">
+@import "@/styles/base.scss";
 
 #app {
   text-align: center;

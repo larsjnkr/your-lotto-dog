@@ -1,0 +1,27 @@
+:root {
+    /* ### LIGHT MODE ### */
+    --yld-white: #FFFFFF;
+    --yld-highlight-light: #000000;
+  
+    /* ### DARK MODE ### */
+    --yld-dark: #181818;
+    --yld-highlight-dark: #FCA311;
+}
+
+:root {
+  --color-background: var(--yld-white);
+  --color-text: var(--yld-dark);
+  --color-highlight: var(--yld-highlight-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--yld-dark);
+    --color-text: var(--yld-white);
+    --color-highlight: var(--yld-highlight-dark);
+  }
+}
+
+$color-bg: var(--color-background);
+$color-font: var(--color-text);
+$color-highlight: var(--color-highlight);
