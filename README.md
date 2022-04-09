@@ -31,6 +31,7 @@ npm install
 
 ```sh
 npm run dev
+npm run dev:proxy ()
 ```
 
 ### Type-Check, Compile and Minify for Production
