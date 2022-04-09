@@ -9,7 +9,7 @@ const router = createRouter({
   routes: routes,
 });
 
-describe("App", () => {
+describe("App.ue", () => {
   let wrapper: VueWrapper;
 
   beforeEach(() => {
@@ -21,7 +21,6 @@ describe("App", () => {
   });
 
   it("navigates to '/'", () => {
-    window.console.log(wrapper.findComponent(RouterLink).props().to);
     expect(wrapper.findComponent(RouterLink).props().to).toBe("/");
   });
 });
