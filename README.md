@@ -1,53 +1,42 @@
-# your-lotto-dog
+# Your Lotto Dog
 
-This template should help get you started developing with Vue 3 in Vite.
+Your Lotto Dog is a small [Vue3](https://vuejs.org)  prototype with which fetches data from a [GraphQL](https://graphql.org) Api.
 
-## Recommended IDE Setup
+## Tech Stack
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+- [Vite](https://vitejs.dev)
+- [Vue3](https://vuejs.org)
+- [Vue Apollo](https://apollo.vuejs.org/)
 
-## Type Support for `.vue` Imports in TS
+## Installation
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+Use the package manager [npm](https://www.npmjs.com) to install Your Lotto Dog.
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## How To Run
+After you installed all relevant packages with `npm install` you can now start Your Lotto Dog with:
 
 ```sh
 npm run dev
-npm run dev:proxy ()
 ```
 
-### Type-Check, Compile and Minify for Production
-
+You may need a proxy running to reach the endpoint from your local environment.
 ```sh
-npm run build
+npm run dev:proxy
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+## Tests And Coverage
+The tests using [Vitest](https://vitest.dev/) and [Vue-Test-Utils](https://v1.test-utils.vuejs.org). You can run them with following command:
 
 ```sh
 npm run test:unit
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+If you want to see the coverage, use:
 
 ```sh
-npm run lint
+npm run test:coverage
 ```
