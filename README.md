@@ -1,6 +1,6 @@
 # Your Lotto Dog
 
-Your Lotto Dog is a small [Vue3](https://vuejs.org)  prototype with which fetches data from a [GraphQL](https://graphql.org) Api.
+Your Lotto Dog is a small [Vue3](https://vuejs.org) prototypen which fetches data from a [GraphQL](https://graphql.org) Api.
 
 ## Tech Stack
 
