@@ -9,7 +9,7 @@ const router = createRouter({
   routes: routes,
 });
 
-describe("WelcomeView", () => {
+describe("WelcomeView.vue", () => {
   it("navigates to '/eurojackpot'", () => {
     const wrapper: VueWrapper = shallowMount(WelcomeView, {
       global: {
