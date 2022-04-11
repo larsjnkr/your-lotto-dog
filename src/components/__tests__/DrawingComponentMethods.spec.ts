@@ -21,7 +21,7 @@ vi.mock("@vue/apollo-composable", () => {
 
 describe("DrawingComponent.vue (mocked @vue/apollo-composable)", () => {
   let wrapper: VueWrapper;
-  const spy1 = vi.spyOn(ApolloComposable, "useQuery");
+  const useQuerySpy = vi.spyOn(ApolloComposable, "useQuery");
 
   const setWrapper = (type: string): void => {
     wrapper = shallowMount(DrawingComponent, {
@@ -32,10 +32,16 @@ describe("DrawingComponent.vue (mocked @vue/apollo-composable)", () => {
   it("calls useQuery with prop:type", () => {
     const eurojackpot = "eurojackpot";
     setWrapper(eurojackpot);
-    expect(spy1).toBeCalledWith(getDraws, { limit: 1, type: eurojackpot });
+    expect(useQuerySpy).toBeCalledWith(getDraws, {
+      limit: 1,
+      type: eurojackpot,
+    });
 
     const cash4life = "cash4life";
     setWrapper(cash4life);
-    expect(spy1).toBeCalledWith(getDraws, { limit: 1, type: cash4life });
+    expect(useQuerySpy).toBeCalledWith(getDraws, {
+      limit: 1,
+      type: cash4life,
+    });
   });
 });
